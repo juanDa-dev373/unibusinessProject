@@ -1,4 +1,5 @@
 package co.unibusiness.unibusiness.domain.model;
 
-public class business {
+public enum StateRecord {
+    ACTIVE, INACTIVE
 }
