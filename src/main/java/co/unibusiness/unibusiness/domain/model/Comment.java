@@ -12,9 +12,7 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Document("Comment")
 public class Comment {
-    @Id
     private String id;
     private LocalDateTime date;
     private int rating;

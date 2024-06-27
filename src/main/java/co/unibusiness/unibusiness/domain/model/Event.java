@@ -11,9 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Document("Event")
 public class Event {
-    @Id
     private String id;
     private String description;
     private String date;

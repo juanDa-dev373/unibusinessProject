@@ -12,9 +12,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Document("Moderator")
-public class Moderator {
-    @Id
+public class Moderator extends Account{
     private String id;
     private List<HistoryReview> historyReview;
 }

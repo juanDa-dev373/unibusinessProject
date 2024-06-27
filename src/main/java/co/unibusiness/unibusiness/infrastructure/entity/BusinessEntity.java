@@ -1,5 +1,6 @@
-package co.unibusiness.unibusiness.domain.model;
+package co.unibusiness.unibusiness.infrastructure.entity;
 
+import co.unibusiness.unibusiness.domain.model.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +13,9 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Business {
+@Document("Business")
+public class BusinessEntity {
+    @Id
     private String id;
     private String name;
     private String description;
