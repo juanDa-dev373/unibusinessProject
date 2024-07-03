@@ -6,7 +6,7 @@ import co.unibusiness.unibusiness.domain.model.Business;
 import java.util.List;
 
 public interface BusinessUseCase {
-    String addBusiness(AddBusinessDTO addBusinessDto , String token) throws Exception;
+    String addBusiness(AddBusinessDTO addBusinessDto) throws Exception;
     String updateBusiness(UpdateBusinessDTO updateBusinessDTO, String token) throws Exception;
     String deleteBusiness(DeleteBusinessDTO deleteBusinessDTO, String token) throws Exception;
     List<Business> searchBusinessLocation(LocationDTO locationDTO) throws Exception;

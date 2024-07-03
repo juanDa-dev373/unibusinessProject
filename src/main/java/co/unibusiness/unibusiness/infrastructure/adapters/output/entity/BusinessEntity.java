@@ -1,4 +1,4 @@
-package co.unibusiness.unibusiness.infrastructure.entity;
+package co.unibusiness.unibusiness.infrastructure.adapters.output.entity;
 
 import co.unibusiness.unibusiness.domain.model.*;
 import lombok.AllArgsConstructor;

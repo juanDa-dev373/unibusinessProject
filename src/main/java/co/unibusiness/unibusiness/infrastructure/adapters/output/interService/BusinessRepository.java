@@ -2,10 +2,9 @@ package co.unibusiness.unibusiness.infrastructure.adapters.output.interService;
 
 import co.unibusiness.unibusiness.application.ports.output.BusinessPort;
 import co.unibusiness.unibusiness.domain.model.Business;
-import co.unibusiness.unibusiness.domain.model.StateBusiness;
-import co.unibusiness.unibusiness.domain.model.StateRecord;
-import co.unibusiness.unibusiness.infrastructure.entity.BusinessEntity;
-import co.unibusiness.unibusiness.infrastructure.repositories.BusinessRepo;
+import co.unibusiness.unibusiness.infrastructure.adapters.output.converter.BusinessConverter;
+import co.unibusiness.unibusiness.infrastructure.adapters.output.entity.BusinessEntity;
+import co.unibusiness.unibusiness.infrastructure.adapters.output.repositories.BusinessRepo;
 
 import java.util.Optional;
 
@@ -35,6 +34,6 @@ public class BusinessRepository implements BusinessPort {
 
     @Override
     public Optional<Business> findByName(String name) {
-        return Optional.empty();
+        return businessRepo.findByName(name).map(BusinessConverter::toBusiness);
     }
 }

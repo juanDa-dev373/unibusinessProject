@@ -3,8 +3,8 @@ package co.unibusiness.unibusiness.infrastructure.adapters.output.interService;
 import co.unibusiness.unibusiness.application.ports.output.ClientPort;
 import co.unibusiness.unibusiness.domain.model.Client;
 import co.unibusiness.unibusiness.infrastructure.adapters.output.converter.ClientConverter;
-import co.unibusiness.unibusiness.infrastructure.entity.ClientEntity;
-import co.unibusiness.unibusiness.infrastructure.repositories.ClientRepo;
+import co.unibusiness.unibusiness.infrastructure.adapters.output.entity.ClientEntity;
+import co.unibusiness.unibusiness.infrastructure.adapters.output.repositories.ClientRepo;
 
 import java.util.List;
 import java.util.Optional;

@@ -6,8 +6,8 @@ import co.unibusiness.unibusiness.application.services.BusinessService;
 import co.unibusiness.unibusiness.application.services.ClientService;
 import co.unibusiness.unibusiness.infrastructure.adapters.output.interService.BusinessRepository;
 import co.unibusiness.unibusiness.infrastructure.adapters.output.interService.ClientRepository;
-import co.unibusiness.unibusiness.infrastructure.repositories.BusinessRepo;
-import co.unibusiness.unibusiness.infrastructure.repositories.ClientRepo;
+import co.unibusiness.unibusiness.infrastructure.adapters.output.repositories.BusinessRepo;
+import co.unibusiness.unibusiness.infrastructure.adapters.output.repositories.ClientRepo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -25,5 +25,5 @@ public class AppConfig {
     public BusinessPort businessPort(BusinessRepo businessRepo){return new BusinessRepository(businessRepo);
     }
     @Bean
-    public BusinessService businessService(BusinessPort businessPort){return new BusinessService(businessPort)}
+    public BusinessService businessService(BusinessPort businessPort){return new BusinessService(businessPort);}
 }

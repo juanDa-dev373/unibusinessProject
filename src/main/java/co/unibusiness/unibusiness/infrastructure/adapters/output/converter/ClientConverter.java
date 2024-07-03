@@ -1,7 +1,7 @@
 package co.unibusiness.unibusiness.infrastructure.adapters.output.converter;
 
 import co.unibusiness.unibusiness.domain.model.Client;
-import co.unibusiness.unibusiness.infrastructure.entity.ClientEntity;
+import co.unibusiness.unibusiness.infrastructure.adapters.output.entity.ClientEntity;
 
 public class ClientConverter {
     public static Client toClient(ClientEntity clientEntity){

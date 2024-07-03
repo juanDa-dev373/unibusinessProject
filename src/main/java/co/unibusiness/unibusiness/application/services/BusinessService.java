@@ -18,7 +18,7 @@ public class BusinessService implements BusinessUseCase {
         this.repository = repository;
     }
     @Override
-    public String addBusiness(AddBusinessDTO addBusinessDto, String token) throws Exception {
+    public String addBusiness(AddBusinessDTO addBusinessDto) throws Exception {
         Business business = new Business();
         if(repository.findByName(addBusinessDto.name()).isPresent()){
             throw new Exception("The business already exists");
